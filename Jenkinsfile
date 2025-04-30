@@ -35,7 +35,7 @@ pipeline {
                     sh """
                     docker run -d \
                     --name blog-nutriologia \
-                    -p 80:80 \
+                    -p 8080:8080 \
                     ${env.DOCKER_IMAGE}:${env.DOCKER_TAG}
                     """
                 }
